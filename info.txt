@@ -1,0 +1,58 @@
+User Info:
+    Monthly Salary
+    Tax Bracket
+    House Tax
+    Major Expenses (Mortgage, tuition, etc.)
+    Credit
+
+UI:
+    Expenses
+    New Major Expenses
+    Budget
+
+Future Updates:
+    Investing Stuff
+    Business Portfolio
+    Real Estate
+    Monthly Spendature using Graphs
+    Bonuses
+
+
+
+
+
+
+Tax Rates
+
+Provincial
+5.05% on the first $49,231 of taxable income
+9.15% on taxable income over $49,231 up to $98,463
+11.16% on taxable income over $98,463 up to $150,000
+12.16% on taxable income over $150,000 up to $220,000
+13.16% on taxable income over $220,000
+
+Fedral
+15% on the first $53,358 of taxable income
+20.5% on taxable income over $53,359 up to $106,717
+26% on taxable income over $106,717 up to $165,430
+29% on taxable income over $165,430 up to $235,675
+33% on any taxable income over $235,675
+
+
+
+
+First Step
+- Allow to add or remove from checking account
+- Sees debt
+- Allows to split money into savings
+- Montly Salary
+- Taxes Related Stuff
+- See all Expenses
+
+Second Step
+
+
+Date:
+
+Date: 2024 - 10 - 24
+    item: Food

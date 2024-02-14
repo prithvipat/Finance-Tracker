@@ -1,0 +1,74 @@
+Tax Formula
+
+        
+        # Federal tax brackets and rates
+        federal_brackets = [53359, 106717, 165430, 235675]
+        federal_rates = [0.15, 0.205, 0.26, 0.29, 0.33]
+
+        # Ontario tax brackets and rates
+        ontario_brackets = [49231, 98463, 150000, 220000]
+        ontario_rates = [0.0505, 0.0915, 0.1116, 0.1216, 0.1316]
+
+        # Calculate Federal tax
+        federal_tax = 0
+        remaining_income = income
+        
+        for i in range(len(federal_brackets)):
+            if remaining_income <= 0:
+                break
+
+            if i == len(federal_brackets) - 1 or remaining_income <= federal_brackets[i]:
+                federal_tax += remaining_income * federal_rates[i]
+                break
+
+            federal_tax += federal_brackets[i] * federal_rates[i]
+            remaining_income -= federal_brackets[i]
+
+        # Calculate Ontario tax
+        """
+        ontario_tax = 0
+        remaining_income = income
+        for i in range(len(ontario_brackets)):
+            if remaining_income <= 0:
+                break
+
+            if i == len(ontario_brackets) - 1 or remaining_income <= ontario_brackets[i]:
+                ontario_tax += remaining_income * ontario_rates[i]
+                break
+
+            ontario_tax += ontario_brackets[i] * ontario_rates[i]
+            remaining_income -= ontario_brackets[i]
+        """
+        # Return the total tax based on the province
+        return federal_tax
+
+
+Transactions
+            print(""" 
+What was it that you bought
+1) Food
+2) Travel
+3) Utilities
+4) Others / Fun
+                  """)
+
+            inu = int(input(""))
+            if inu == 1:
+                innerkey = "Food"
+                innerValue = f"{item} : {price}"
+            
+            elif inu == 2:
+                innerkey = "Travel"
+                innerValue = f"{item} : {price}"
+
+            elif inu == 3:
+                innerkey = "Utilities"  
+                innerValue = f"{item} : {price}"
+
+            elif inu == 4:
+                innerkey = "Others"
+                innerValue = f"{item} : {price}"
+
+            inner_dict = {innerkey: innerValue}
+
+            self.dict[outerkey] = inner_dict
